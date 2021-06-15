@@ -73,14 +73,15 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
 import { RouterModule, Routes } from &#x27;@angular/router&#x27;;
+import { PageNotFoundComponent } from &#x27;./pages/page-not-found/page-not-found.component&#x27;;
 
-const routes: Routes &#x3D; [];
+const routes: Routes &#x3D; [{ path: &#x27;&#x27;, component: PageNotFoundComponent }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class PageNotFoundRoutingModule { }
+export class PageNotFoundRoutingModule {}
 </code></pre>
     </div>
 </div>
