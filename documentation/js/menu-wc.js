@@ -258,6 +258,10 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                         <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-UiModule-a059bf01720e893fad3a1a38321112dc"' :
                                             'id="xs-components-links-module-UiModule-a059bf01720e893fad3a1a38321112dc"' }>
                                             <li class="link">
+                                                <a href="components/Ui2Component.html"
+                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">Ui2Component</a>
+                                            </li>
+                                            <li class="link">
                                                 <a href="components/UiComponent.html"
                                                     data-type="entity-link" data-context="sub-entity" data-context-id="modules">UiComponent</a>
                                             </li>
@@ -266,19 +270,6 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             </li>
                 </ul>
                 </li>
-                    <li class="chapter">
-                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ? 'data-target="#components-links"' :
-                            'data-target="#xs-components-links"' }>
-                            <span class="icon ion-md-cog"></span>
-                            <span>Components</span>
-                            <span class="icon ion-ios-arrow-down"></span>
-                        </div>
-                        <ul class="links collapse " ${ isNormalMode ? 'id="components-links"' : 'id="xs-components-links"' }>
-                            <li class="link">
-                                <a href="components/UiComponent.html" data-type="entity-link">UiComponent</a>
-                            </li>
-                        </ul>
-                    </li>
                     <li class="chapter">
                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ? 'data-target="#miscellaneous-links"'
                             : 'data-target="#xs-miscellaneous-links"' }>

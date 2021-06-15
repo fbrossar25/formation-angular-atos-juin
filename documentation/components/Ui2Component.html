@@ -36,7 +36,7 @@
 
 <ol class="breadcrumb">
   <li>Components</li>
-  <li>IconNavComponent</li>
+  <li>Ui2Component</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -62,7 +62,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/icons/components/icon-nav/icon-nav.component.ts</code>
+    <code>src/app/ui/components/ui2/ui2.component.ts</code>
 </p>
 
 
@@ -92,19 +92,19 @@
 
             <tr>
                 <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>app-icon-nav</code></td>
+                <td class="col-md-9"><code>app-ui2</code></td>
             </tr>
 
             <tr>
                 <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>./icon-nav.component.scss</code></td>
+                <td class="col-md-9"><code>./ui2.component.scss</code></td>
             </tr>
 
 
 
             <tr>
                 <td class="col-md-3">templateUrl</td>
-                <td class="col-md-9"><code>./icon-nav.component.html</code></td>
+                <td class="col-md-9"><code>./ui2.component.html</code></td>
             </tr>
 
 
@@ -132,7 +132,7 @@
                         <ul class="index-list">
                             <li>
                                     <span class="modifier">Public</span>
-                                <a href="#myIcon">myIcon</a>
+                                <a href="#open">open</a>
                             </li>
                         </ul>
                     </td>
@@ -148,6 +148,10 @@
                         <ul class="index-list">
                             <li>
                                 <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#toggle">toggle</a>
                             </li>
                         </ul>
                     </td>
@@ -172,7 +176,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/icons/components/icon-nav/icon-nav.component.ts:9</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/ui/components/ui2/ui2.component.ts:9</a></div>
                             </td>
                         </tr>
 
@@ -211,8 +215,49 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="12"
-                            class="link-to-prism">src/app/icons/components/icon-nav/icon-nav.component.ts:12</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="13"
+                            class="link-to-prism">src/app/ui/components/ui2/ui2.component.ts:13</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggle"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            toggle
+                        </b>
+                        <a href="#toggle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>toggle()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="15"
+                            class="link-to-prism">src/app/ui/components/ui2/ui2.component.ts:15</a></div>
                 </td>
             </tr>
 
@@ -238,23 +283,23 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="myIcon"></a>
+                        <a name="open"></a>
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            myIcon</b>
-                            <a href="#myIcon"><span class="icon ion-ios-link"></span></a>
+                            open</b>
+                            <a href="#open"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>faBars</code>
+                            <i>Default value : </i><code>true</code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/icons/components/icon-nav/icon-nav.component.ts:9</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/ui/components/ui2/ui2.component.ts:9</a></div>
                             </td>
                         </tr>
 
@@ -268,33 +313,72 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
-import { faBars } from &#x27;@fortawesome/free-solid-svg-icons&#x27;;
+
 @Component({
-  selector: &#x27;app-icon-nav&#x27;,
-  templateUrl: &#x27;./icon-nav.component.html&#x27;,
-  styleUrls: [&#x27;./icon-nav.component.scss&#x27;],
+  selector: &#x27;app-ui2&#x27;,
+  templateUrl: &#x27;./ui2.component.html&#x27;,
+  styleUrls: [&#x27;./ui2.component.scss&#x27;],
 })
-export class IconNavComponent implements OnInit {
-  public myIcon &#x3D; faBars;
+export class Ui2Component implements OnInit {
+  public open &#x3D; true;
+
   constructor() {}
 
   ngOnInit(): void {}
+
+  public toggle() {
+    this.open &#x3D; !this.open;
+  }
 }
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;fa-icon [icon]&#x3D;&quot;myIcon&quot;&gt;&lt;/fa-icon&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;ui&quot;&gt;
+  &lt;header&gt;
+    &lt;span (click)&#x3D;&quot;toggle()&quot;&gt;
+      &lt;ng-container *ngIf&#x3D;&quot;open; then thenBlock; else elseBlock&quot;&gt;&lt;/ng-container&gt;
+    &lt;/span&gt;
+    &lt;ng-template #thenBlock&gt;
+      &lt;ng-content select&#x3D;&quot;.tr-close&quot;&gt;&lt;/ng-content&gt;
+    &lt;/ng-template&gt;
+    &lt;ng-template #elseBlock&gt;
+      &lt;ng-content select&#x3D;&quot;.tr-open&quot;&gt;&lt;/ng-content&gt;
+    &lt;/ng-template&gt;
+    &lt;ng-content select&#x3D;&quot;.tr-header&quot;&gt;&lt;/ng-content&gt;
+  &lt;/header&gt;
+  &lt;nav [ngClass]&#x3D;&quot;{ &#x27;close-aside&#x27;: !open }&quot;&gt;
+    &lt;ng-content select&#x3D;&quot;.tr-nav&quot;&gt;&lt;/ng-content&gt;
+  &lt;/nav&gt;
+  &lt;main&gt;
+    &lt;ng-content select&#x3D;&quot;.tr-content&quot;&gt;&lt;/ng-content&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;
+    &lt;ng-content select&#x3D;&quot;.tr-footer&quot;&gt;&lt;/ng-content&gt;
+  &lt;/footer&gt;
+&lt;/div&gt;
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
                 <p class="comment">
-                    <code>./icon-nav.component.scss</code>
+                    <code>./ui2.component.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss">fa-icon {
-  cursor: pointer;
-  margin-right: 5px;
+                <pre class="line-numbers"><code class="language-scss">.ui {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.close-aside {
+  height: 0px;
+  overflow: hidden;
+}
+nav {
+  background: var(--app-darklight2);
+}
+main {
+  flex-grow: 1;
+  background: var(--app-darklight);
 }
 </code></pre>
     </div>
@@ -324,10 +408,10 @@ export class IconNavComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><fa-icon [icon]="myIcon"></fa-icon></div>'
+        var COMPONENT_TEMPLATE = '<div><div class="ui">  <header>    <span (click)="toggle()">      <ng-container *ngIf="open; then thenBlock; else elseBlock"></ng-container>    </span>    <ng-template #thenBlock>      <ng-content select=".tr-close"></ng-content>    </ng-template>    <ng-template #elseBlock>      <ng-content select=".tr-open"></ng-content>    </ng-template>    <ng-content select=".tr-header"></ng-content>  </header>  <nav [ngClass]="{ \'close-aside\': !open }">    <ng-content select=".tr-nav"></ng-content>  </nav>  <main>    <ng-content select=".tr-content"></ng-content>  </main>  <footer>    <ng-content select=".tr-footer"></ng-content>  </footer></div></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IconCloseComponent', 'selector': 'app-icon-close'},{'name': 'IconDeleteComponent', 'selector': 'app-icon-delete'},{'name': 'IconEditComponent', 'selector': 'app-icon-edit'},{'name': 'IconNavComponent', 'selector': 'app-icon-nav'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'PageAddClientsComponent', 'selector': 'app-page-add-clients'},{'name': 'PageAddOrdersComponent', 'selector': 'app-page-add-orders'},{'name': 'PageEditClientsComponent', 'selector': 'app-page-edit-clients'},{'name': 'PageEditOrdersComponent', 'selector': 'app-page-edit-orders'},{'name': 'PageForgotPasswordComponent', 'selector': 'app-page-forgot-password'},{'name': 'PageListClientsComponent', 'selector': 'app-page-list-clients'},{'name': 'PageListOrdersComponent', 'selector': 'app-page-list-orders'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PageResetPasswordComponent', 'selector': 'app-page-reset-password'},{'name': 'PageSignInComponent', 'selector': 'app-page-sign-in'},{'name': 'PageSignUpComponent', 'selector': 'app-page-sign-up'},{'name': 'Ui2Component', 'selector': 'app-ui2'},{'name': 'UiComponent', 'selector': 'app-ui'}];
     var DIRECTIVES = [];
-    var ACTUAL_COMPONENT = {'name': 'IconNavComponent'};
+    var ACTUAL_COMPONENT = {'name': 'Ui2Component'};
 </script>
 <script src="../js/tree.js"></script>
 
@@ -362,7 +446,7 @@ export class IconNavComponent implements OnInit {
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
-            var COMPODOC_CURRENT_PAGE_URL = 'IconNavComponent.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'Ui2Component.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 
