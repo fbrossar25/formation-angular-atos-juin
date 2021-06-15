@@ -1,3 +1,8 @@
-<h1>{{ title }}</h1>
-
-<router-outlet></router-outlet>
+<app-ui>
+  <!-- ici ui component html est rendu dans le DOM -->
+  <button class="tr-btn">Ouvrir/Fermer</button>
+  <app-header class="tr-header"></app-header>
+  <app-nav class="tr-nav"></app-nav>
+  <div class="tr-content">Contenu de la page depuis appComponent</div>
+  <app-footer class="tr-footer"></app-footer>
+</app-ui>
