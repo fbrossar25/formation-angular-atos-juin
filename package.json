@@ -3,10 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve -o",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "compodoc": "compodoc --config .compodocrc.json",
+    "dev": "concurrently 'npm:compodoc' 'npm:start'"
   },
   "private": true,
   "dependencies": {
@@ -15,9 +17,12 @@
     "@angular/compiler": "~12.0.4",
     "@angular/core": "~12.0.4",
     "@angular/forms": "~12.0.4",
+    "@angular/localize": "~12.0.4",
     "@angular/platform-browser": "~12.0.4",
     "@angular/platform-browser-dynamic": "~12.0.4",
     "@angular/router": "~12.0.4",
+    "@ng-bootstrap/ng-bootstrap": "^9.1.2",
+    "bootstrap": "^4.5.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
@@ -26,8 +31,10 @@
     "@angular-devkit/build-angular": "~12.0.4",
     "@angular/cli": "~12.0.4",
     "@angular/compiler-cli": "~12.0.4",
+    "@compodoc/compodoc": "^1.1.11",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
+    "concurrently": "^6.2.0",
     "jasmine-core": "~3.7.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",

@@ -1,0 +1,8 @@
+{
+  "open": true,
+  "output": "documentation",
+  "serve": true,
+  "theme": "original",
+  "tsconfig": "tsconfig.json",
+  "watch": true
+}
