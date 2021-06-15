@@ -5,10 +5,14 @@
     "ng": "ng",
     "start": "ng serve -o",
     "build": "ng build",
+    "build:stats": "ng build --stats-json && webpack-bundle-analyzer dist/formation-angular-atos-juin/stats.json",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "compodoc": "compodoc --config .compodocrc.json",
-    "dev": "concurrently 'npm:compodoc' 'npm:start'"
+    "dev": "concurrently 'npm:compodoc' 'npm:start'",
+    "clean": "rimraf dist",
+    "mrproper": "rimraf dist node_modules",
+    "rebuild": "npm run mrproper && npm cache verify && npm i"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +25,10 @@
     "@angular/platform-browser": "~12.0.4",
     "@angular/platform-browser-dynamic": "~12.0.4",
     "@angular/router": "~12.0.4",
+    "@fortawesome/angular-fontawesome": "^0.9.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@ng-bootstrap/ng-bootstrap": "^9.1.2",
     "bootstrap": "^4.5.0",
     "rxjs": "~6.6.0",
@@ -41,6 +49,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
-    "typescript": "~4.2.3"
+    "typescript": "~4.2.3",
+    "webpack-bundle-analyzer": "^4.4.2"
   }
 }
