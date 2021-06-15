@@ -46,6 +46,8 @@
 ### Optimisations
 
 - Éviter de charger le module `Shared` au démarrage de l'application, car il est rare d'avoir besoin de l'intégralité du module partagé sur la page d'accueil
+- Dans `app-routing-modules`, l'ajout de la stratégie de chargement des modules `PreloadAllModules` indique à angular de précharger en taches de fond tous les modules qui ne sont pas encore chargés à l'accès d'une pages, plutot que de faire du lazy loading
+  - Dans certains cas, par exemple si une partie de l'application est un back-office nécessitant une authentification, il est également possible d'indiquer pour chaque route, quels modules doivent et ne doivent pas être préchargés
 
 ## Fichiers d'angular
 
