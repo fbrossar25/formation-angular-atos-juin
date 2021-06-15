@@ -205,9 +205,15 @@ export class AppComponent {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;h1&gt;{{ title }}&lt;/h1&gt;
-
-&lt;router-outlet&gt;&lt;/router-outlet&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;app-ui&gt;
+  &lt;!-- ici ui component html est rendu dans le DOM --&gt;
+  &lt;app-icon-close class&#x3D;&quot;tr-close&quot;&gt;&lt;/app-icon-close&gt;
+  &lt;app-icon-nav class&#x3D;&quot;tr-open&quot;&gt;&lt;/app-icon-nav&gt;
+  &lt;app-header class&#x3D;&quot;tr-header&quot;&gt;&lt;/app-header&gt;
+  &lt;app-nav class&#x3D;&quot;tr-nav&quot;&gt;&lt;/app-nav&gt;
+  &lt;div class&#x3D;&quot;tr-content&quot;&gt;Contenu de la page depuis appComponent&lt;/div&gt;
+  &lt;app-footer class&#x3D;&quot;tr-footer&quot;&gt;&lt;/app-footer&gt;
+&lt;/app-ui&gt;
 </code></pre>
     </div>
 
@@ -243,8 +249,8 @@ export class AppComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><h1>{{ title }}</h1><router-outlet></router-outlet></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'PageAddClientsComponent', 'selector': 'app-page-add-clients'},{'name': 'PageAddOrdersComponent', 'selector': 'app-page-add-orders'},{'name': 'PageEditClientsComponent', 'selector': 'app-page-edit-clients'},{'name': 'PageEditOrdersComponent', 'selector': 'app-page-edit-orders'},{'name': 'PageForgotPasswordComponent', 'selector': 'app-page-forgot-password'},{'name': 'PageListClientsComponent', 'selector': 'app-page-list-clients'},{'name': 'PageListOrdersComponent', 'selector': 'app-page-list-orders'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PageResetPasswordComponent', 'selector': 'app-page-reset-password'},{'name': 'PageSignInComponent', 'selector': 'app-page-sign-in'},{'name': 'PageSignUpComponent', 'selector': 'app-page-sign-up'}];
+        var COMPONENT_TEMPLATE = '<div><app-ui>  <!-- ici ui component html est rendu dans le DOM -->  <app-icon-close class="tr-close"></app-icon-close>  <app-icon-nav class="tr-open"></app-icon-nav>  <app-header class="tr-header"></app-header>  <app-nav class="tr-nav"></app-nav>  <div class="tr-content">Contenu de la page depuis appComponent</div>  <app-footer class="tr-footer"></app-footer></app-ui></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IconCloseComponent', 'selector': 'app-icon-close'},{'name': 'IconDeleteComponent', 'selector': 'app-icon-delete'},{'name': 'IconEditComponent', 'selector': 'app-icon-edit'},{'name': 'IconNavComponent', 'selector': 'app-icon-nav'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'PageAddClientsComponent', 'selector': 'app-page-add-clients'},{'name': 'PageAddOrdersComponent', 'selector': 'app-page-add-orders'},{'name': 'PageEditClientsComponent', 'selector': 'app-page-edit-clients'},{'name': 'PageEditOrdersComponent', 'selector': 'app-page-edit-orders'},{'name': 'PageForgotPasswordComponent', 'selector': 'app-page-forgot-password'},{'name': 'PageListClientsComponent', 'selector': 'app-page-list-clients'},{'name': 'PageListOrdersComponent', 'selector': 'app-page-list-orders'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PageResetPasswordComponent', 'selector': 'app-page-reset-password'},{'name': 'PageSignInComponent', 'selector': 'app-page-sign-in'},{'name': 'PageSignUpComponent', 'selector': 'app-page-sign-up'},{'name': 'UiComponent', 'selector': 'app-ui'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'AppComponent'};
 </script>
