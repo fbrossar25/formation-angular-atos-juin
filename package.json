@@ -8,6 +8,7 @@
     "build:stats": "ng build --stats-json && webpack-bundle-analyzer dist/formation-angular-atos-juin/stats.json",
     "build:doc": "compodoc --config .compodocrc.json",
     "watch": "ng build --watch --configuration development",
+    "jsonServer": "json-server --watch mock_db/db.json",
     "test": "ng test",
     "compodoc": "compodoc --config .compodocrc.json -s -o",
     "dev": "concurrently 'npm:compodoc' 'npm:start'",

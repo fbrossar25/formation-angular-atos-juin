@@ -73,8 +73,15 @@
 
 ---
 
+### Tests unitaires
+
 - Describe sert à démarrer un série de test, chaque test étant un appel à la méthode `it`.
 - Il est recommandé d'utiliser Gest à la place de Karma : Gest est plus complet, à une documentation plus fournie et les ressources associées sont plus nombreuses.
+
+### Bases de données de test
+
+- créer une fausse base de donnée avec [json-server](https://github.com/typicode/json-server)
+- ou créer une fausse API avec [mockoon](https://mockoon.com/)
 
 ## Notions
 

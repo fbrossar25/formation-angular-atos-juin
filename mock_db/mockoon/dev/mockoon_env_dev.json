@@ -1,0 +1,101 @@
+{
+    "source": "mockoon:1.14.1",
+    "data": [
+        {
+            "type": "environment",
+            "item": {
+                "uuid": "",
+                "lastMigration": 15,
+                "name": "Formation api dev",
+                "endpointPrefix": "formation/dev",
+                "latency": 200,
+                "port": 3001,
+                "routes": [
+                    {
+                        "uuid": "",
+                        "documentation": "",
+                        "method": "get",
+                        "endpoint": "orders",
+                        "responses": [
+                            {
+                                "uuid": "",
+                                "body": "[\r\n    {\r\n      \"tjmHt\": 1200,\r\n      \"nbJours\": 20,\r\n      \"tva\": 20,\r\n      \"state\": \"OPTION\",\r\n      \"typePresta\": \"formation\",\r\n      \"client\": \"Capgemini2\",\r\n      \"comment\": \"Merci Cap pour les 24k\",\r\n      \"id\": 1\r\n    },\r\n    {\r\n      \"tjmHt\": 1200,\r\n      \"nbJours\": 10,\r\n      \"tva\": 20,\r\n      \"state\": \"CONFIRMED\",\r\n      \"typePresta\": \"formation\",\r\n      \"client\": \"Modis\",\r\n      \"comment\": \"fgddhf\",\r\n      \"id\": 2\r\n    },\r\n    {\r\n      \"tjmHt\": 1200,\r\n      \"nbJours\": 1,\r\n      \"tva\": 20,\r\n      \"state\": \"CANCELED\",\r\n      \"typePresta\": \"formation\",\r\n      \"client\": \"Capgemini\",\r\n      \"comment\": null,\r\n      \"id\": 3\r\n    },\r\n    {\r\n      \"tjmHt\": 1200,\r\n      \"nbJours\": 12,\r\n      \"tva\": 20,\r\n      \"state\": \"CONFIRMED\",\r\n      \"typePresta\": \"formation\",\r\n      \"client\": \"Capgemini\",\r\n      \"comment\": \"Merci capgemini pour les 14k\",\r\n      \"id\": 4\r\n    },\r\n    {\r\n      \"tjmHt\": 1200,\r\n      \"nbJours\": 8,\r\n      \"tva\": 20,\r\n      \"state\": \"OPTION\",\r\n      \"typePresta\": \"coaching\",\r\n      \"client\": \"Modis\",\r\n      \"comment\": \"Merci Modis pour les 10k\",\r\n      \"id\": 5\r\n    }\r\n  ]",
+                                "latency": 0,
+                                "statusCode": 200,
+                                "label": "",
+                                "headers": [],
+                                "filePath": "",
+                                "sendFileAsBody": false,
+                                "rules": [],
+                                "rulesOperator": "OR",
+                                "disableTemplating": false
+                            }
+                        ],
+                        "enabled": true,
+                        "randomResponse": false,
+                        "sequentialResponse": false
+                    },
+                    {
+                        "uuid": "",
+                        "documentation": "",
+                        "method": "get",
+                        "endpoint": "clients",
+                        "responses": [
+                            {
+                                "uuid": "",
+                                "body": "[\r\n  {\r\n    \"state\": \"INACTIVE\",\r\n    \"tva\": 20,\r\n    \"id\": 1,\r\n    \"name\": \"Capgemini\",\r\n    \"totalCaHt\": 120000,\r\n    \"comment\": \"un comment pour client modis\"\r\n  },\r\n  {\r\n    \"state\": \"ACTIVE\",\r\n    \"tva\": 20,\r\n    \"id\": 2,\r\n    \"name\": \"Modis\",\r\n    \"totalCaHt\": 120000,\r\n    \"comment\": \"un comment pour client modis\"\r\n  },\r\n  {\r\n    \"tva\": 20,\r\n    \"state\": \"INACTIVE\",\r\n    \"name\": \"modis\",\r\n    \"totalCaHt\": 0,\r\n    \"comment\": \"rsger\",\r\n    \"id\": 3\r\n  }\r\n]",
+                                "latency": 0,
+                                "statusCode": 200,
+                                "label": "",
+                                "headers": [],
+                                "filePath": "",
+                                "sendFileAsBody": false,
+                                "rules": [],
+                                "rulesOperator": "OR",
+                                "disableTemplating": false
+                            }
+                        ],
+                        "enabled": true,
+                        "randomResponse": false,
+                        "sequentialResponse": false
+                    }
+                ],
+                "proxyMode": false,
+                "proxyHost": "",
+                "proxyRemovePrefix": false,
+                "https": false,
+                "cors": true,
+                "headers": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Access-Control-Allow-Origin",
+                        "value": "*"
+                    },
+                    {
+                        "key": "Access-Control-Allow-Methods",
+                        "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+                    },
+                    {
+                        "key": "Access-Control-Allow-Headers",
+                        "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+                    }
+                ],
+                "proxyReqHeaders": [
+                    {
+                        "key": "",
+                        "value": ""
+                    }
+                ],
+                "proxyResHeaders": [
+                    {
+                        "key": "",
+                        "value": ""
+                    }
+                ]
+            }
+        }
+    ]
+}
