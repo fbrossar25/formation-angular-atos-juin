@@ -76,13 +76,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/ClientsModule.html" data-type="entity-link">ClientsModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-ClientsModule-1ed3be9b9078c74e64d427c9d1eaf21c"' : 'data-target="#xs-components-links-module-ClientsModule-1ed3be9b9078c74e64d427c9d1eaf21c"' }>
+                                            'data-target="#components-links-module-ClientsModule-8c16e2dcef4139475c85af229056a2ac"' : 'data-target="#xs-components-links-module-ClientsModule-8c16e2dcef4139475c85af229056a2ac"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-ClientsModule-1ed3be9b9078c74e64d427c9d1eaf21c"' :
-                                            'id="xs-components-links-module-ClientsModule-1ed3be9b9078c74e64d427c9d1eaf21c"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-ClientsModule-8c16e2dcef4139475c85af229056a2ac"' :
+                                            'id="xs-components-links-module-ClientsModule-8c16e2dcef4139475c85af229056a2ac"' }>
                                             <li class="link">
                                                 <a href="components/PageAddClientsComponent.html"
                                                     data-type="entity-link" data-context="sub-entity" data-context-id="modules">PageAddClientsComponent</a>
@@ -194,13 +194,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/OrdersModule.html" data-type="entity-link">OrdersModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-OrdersModule-9b371077b3254c4171bcf77260f0f755"' : 'data-target="#xs-components-links-module-OrdersModule-9b371077b3254c4171bcf77260f0f755"' }>
+                                            'data-target="#components-links-module-OrdersModule-3ca840be7d311e9b083abe875ef71aee"' : 'data-target="#xs-components-links-module-OrdersModule-3ca840be7d311e9b083abe875ef71aee"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-OrdersModule-9b371077b3254c4171bcf77260f0f755"' :
-                                            'id="xs-components-links-module-OrdersModule-9b371077b3254c4171bcf77260f0f755"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-OrdersModule-3ca840be7d311e9b083abe875ef71aee"' :
+                                            'id="xs-components-links-module-OrdersModule-3ca840be7d311e9b083abe875ef71aee"' }>
                                             <li class="link">
                                                 <a href="components/PageAddOrdersComponent.html"
                                                     data-type="entity-link" data-context="sub-entity" data-context-id="modules">PageAddOrdersComponent</a>
@@ -245,6 +245,25 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             </li>
                             <li class="link">
                                 <a href="modules/TemplatesModule.html" data-type="entity-link">TemplatesModule</a>
+                                    <li class="chapter inner">
+                                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
+                                            'data-target="#components-links-module-TemplatesModule-3d9181f3684996548708cbf3552ae910"' : 'data-target="#xs-components-links-module-TemplatesModule-3d9181f3684996548708cbf3552ae910"' }>
+                                            <span class="icon ion-md-cog"></span>
+                                            <span>Components</span>
+                                            <span class="icon ion-ios-arrow-down"></span>
+                                        </div>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-TemplatesModule-3d9181f3684996548708cbf3552ae910"' :
+                                            'id="xs-components-links-module-TemplatesModule-3d9181f3684996548708cbf3552ae910"' }>
+                                            <li class="link">
+                                                <a href="components/TemplateContainerComponent.html"
+                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">TemplateContainerComponent</a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="components/TemplateFullWidthComponent.html"
+                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">TemplateFullWidthComponent</a>
+                                            </li>
+                                        </ul>
+                                    </li>
                             </li>
                             <li class="link">
                                 <a href="modules/UiModule.html" data-type="entity-link">UiModule</a>

@@ -32,6 +32,7 @@
   - c'est agile, car une page peut être modifier tout simplement avec un seul fichier sans impacter les autres pages
   - en revanche en inconvénients : implique de la duplication de code plus important en cas de modifications générale
   - compromis : utiliser des composants les plus simples possible dans le template
+- Pour éviter les imports à répétitions dans toutes l'application, importer les imports utilisé partout dans SHaredModule et importer au besoin SharedModule la ou c'est nécessaire
 
 ### Conventions
 
