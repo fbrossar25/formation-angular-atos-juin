@@ -72,19 +72,16 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
-import { PreloadAllModules, RouterModule, Routes } from &#x27;@angular/router&#x27;;
-import { PageForgotPasswordComponent } from &#x27;./login/page-forgot-password/page-forgot-password.component&#x27;;
-import { PageResetPasswordComponent } from &#x27;./login/page-reset-password/page-reset-password.component&#x27;;
-import { PageSignInComponent } from &#x27;./login/page-sign-in/page-sign-in.component&#x27;;
-import { PageSignUpComponent } from &#x27;./login/page-sign-up/page-sign-up.component&#x27;;
+import {
+  PreloadAllModules,
+  Router,
+  RouterModule,
+  Routes,
+} from &#x27;@angular/router&#x27;;
 
 const routes: Routes &#x3D; [
   //routes with components loaded on startup
   { path: &#x27;&#x27;, redirectTo: &#x27;/sign-in&#x27;, pathMatch: &#x27;full&#x27; },
-  { path: &#x27;sign-in&#x27;, component: PageSignInComponent },
-  { path: &#x27;sign-up&#x27;, component: PageSignUpComponent },
-  { path: &#x27;reset&#x27;, component: PageResetPasswordComponent },
-  { path: &#x27;forgot&#x27;, component: PageForgotPasswordComponent },
   //lazy loaded routes, loaded on access
   {
     path: &#x27;orders&#x27;,
@@ -113,7 +110,11 @@ const routes: Routes &#x3D; [
   ],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {
+  constructor(private router: Router) {
+    console.info(this.router.config);
+  }
+}
 </code></pre>
     </div>
 </div>

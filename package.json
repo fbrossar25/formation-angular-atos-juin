@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve -o",
     "build": "ng build",
+    "build:prod": "ng build --prod",
     "build:stats": "ng build --stats-json && webpack-bundle-analyzer dist/formation-angular-atos-juin/stats.json",
     "build:doc": "compodoc --config .compodocrc.json",
     "watch": "ng build --watch --configuration development",

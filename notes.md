@@ -124,7 +124,26 @@ Le fichier main.ts lance le fichier app.module.ts, qui lance le fichier app.comp
 - Si import avec npm : dépendance hammerjs et jquery car les animations de bootstrap en dépendent
 - Il faut plutôt importer `ng-bootstrap`
 
-### Commandes
+### Observable
+
+- Observable froid : chaque subscribe réinterprète le flux de données :
+- classe `Observable`
+  - Si on crée un observable retournant un next(Math.random()), chaque subscribe auras une valeur différente de Math.random()
+  - C'est aussi appelé un Observable `unicast`
+  - est initialisé
+- Observable chaud : récupération d'un flux de données continu, en temps réel, sans bsoin de re-subscribe entre chaque donnée
+- Classe `Subject` de RxJS
+  - Si l'on créé un subject, que l'on fait deux subscribe, chaque subscribe obtiendras ensuite les mêmes données à chaque utilisation de la méthode `next` du Subject
+  - ne stock pas de donnée
+  - ne peux pas être initialisé avec des données
+  - Si un subscribe est fait, il ne receveras rien tant que la méthode nesxt n'est pas appelée, même si la méthode next à été appelée AVANT le subscribe, contrairement à l'observable
+- Classe `BehaviorSubject`
+  - stock toujours la dernière valeur donné via la méthode `next`
+  - doit être initialisé
+  - lors d'un nouveau subscribe, retourne instantanément sa valeur actuelle
+  - se comporte ensuite comme un `Subject`
+
+## Commandes
 
 - `ng g module toto` : créé un module nommé TotoModule
 - `ng g module tata --routing` : créé un module nommé TataModule et un module nommé TataRoutingModule
