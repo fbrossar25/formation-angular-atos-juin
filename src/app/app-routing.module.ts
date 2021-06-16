@@ -1,5 +1,10 @@
 import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import {
+  PreloadAllModules,
+  Router,
+  RouterModule,
+  Routes,
+} from '@angular/router';
 import { PageForgotPasswordComponent } from './login/page-forgot-password/page-forgot-password.component';
 import { PageResetPasswordComponent } from './login/page-reset-password/page-reset-password.component';
 import { PageSignInComponent } from './login/page-sign-in/page-sign-in.component';
@@ -40,4 +45,8 @@ const routes: Routes = [
   ],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {
+  constructor(private router: Router) {
+    console.info(this.router.config);
+  }
+}
