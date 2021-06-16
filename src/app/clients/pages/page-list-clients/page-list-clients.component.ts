@@ -3,13 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-page-list-clients',
   templateUrl: './page-list-clients.component.html',
-  styleUrls: ['./page-list-clients.component.scss']
+  styleUrls: ['./page-list-clients.component.scss'],
 })
 export class PageListClientsComponent implements OnInit {
+  public myTitle = 'List Clients';
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

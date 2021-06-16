@@ -144,6 +144,18 @@ Le fichier main.ts lance le fichier app.module.ts, qui lance le fichier app.comp
   - lors d'un nouveau subscribe, retourne instantanément sa valeur actuelle
   - se comporte ensuite comme un `Subject`
 
+## Lifecycle
+
+- [Voir doc](https://angular.io/guide/lifecycle-hooks)
+- Ordre d'exemple : `constructor` -> `ngOnChanges` -> `ngOnInit`
+  - `ngOnInit` est appelé, même si `ngOnChanges` ne l'est pas
+  - explique par exemple le cas suivant :
+    - Dans ChildComponent.ts : `@Input() ChildComponent.title = "I'm the child !"`
+    - Dans ParentComponent.html `<app-child title="I'm the parent !"></app-child>`
+    - La valeur affiché seras `I'm the parent`, car ngOnChanges est appelé **après** le constructor
+    - Avec le même exemple, en ajoutant `this.title = "I'm the child init !"` dans la méthode `ngOnInit`
+    - La valeur affichée seras cette fois `I'm the child init !`
+
 ## Commandes
 
 - `ng g module toto` : créé un module nommé TotoModule
