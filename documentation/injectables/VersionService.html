@@ -28,15 +28,18 @@
                    <compodoc-menu mode="normal"></compodoc-menu>
                </div>
                <!-- START CONTENT -->
-               <div class="content component">
+               <div class="content injectable">
                    <div class="content-data">
 
 
 
 
+
+
+
 <ol class="breadcrumb">
-  <li>Components</li>
-  <li>IconCloseComponent</li>
+  <li>Injectables</li>
+  <li>VersionService</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -46,79 +49,21 @@
         <li >
             <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
         </li>
-        <li >
-            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
-        </li>
-        <li >
-            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
-        </li>
-        <li >
-            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
-        </li>
 </ul>
 
 <div class="tab-content">
-    <div class="tab-pane fade active in" id="c-info"><p class="comment">
-    <h3>File</h3>
-</p>
-<p class="comment">
-    <code>src/app/icons/components/icon-close/icon-close.component.ts</code>
-</p>
-
-
-
-    <p class="comment">
-        <h3>Implements</h3>
-    </p>
-    <p class="comment">
-                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
-    </p>
-
-
-<section>
-    <h3>Metadata</h3>
-    <table class="table table-sm table-hover">
-        <tbody>
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/core/services/version.service.ts</code>
+        </p>
 
 
 
 
-
-
-
-
-
-
-
-            <tr>
-                <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>app-icon-close</code></td>
-            </tr>
-
-            <tr>
-                <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>./icon-close.component.scss</code></td>
-            </tr>
-
-
-
-            <tr>
-                <td class="col-md-3">templateUrl</td>
-                <td class="col-md-9"><code>./icon-close.component.html</code></td>
-            </tr>
-
-
-
-
-
-
-
-
-        </tbody>
-    </table>
-</section>
-
-    <section>
+            <section>
     <h3 id="index">Index</h3>
     <table class="table table-sm table-bordered index-table">
         <tbody>
@@ -132,7 +77,7 @@
                         <ul class="index-list">
                             <li>
                                     <span class="modifier">Public</span>
-                                <a href="#myIcon">myIcon</a>
+                                <a href="#numVersion">numVersion</a>
                             </li>
                         </ul>
                     </td>
@@ -147,7 +92,8 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#ngOnInit">ngOnInit</a>
+                                    <span class="modifier">Public</span>
+                                <a href="#increment">increment</a>
                             </li>
                         </ul>
                     </td>
@@ -161,7 +107,7 @@
     </table>
 </section>
 
-    <section>
+            <section>
     <h3 id="constructor">Constructor</h3>
         <table class="table table-sm table-bordered">
             <tbody>
@@ -172,7 +118,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/icons/components/icon-close/icon-close.component.ts:10</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/core/services/version.service.ts:8</a></div>
                             </td>
                         </tr>
 
@@ -180,11 +126,7 @@
         </table>
 </section>
 
-
-
-
-
-    <section>
+            <section>
     
     <h3 id="methods">
         Methods
@@ -193,26 +135,28 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="ngOnInit"></a>
+                    <a name="increment"></a>
                     <span class="name">
                         <b>
-                            ngOnInit
+                            <span class="modifier">Public</span>
+                            increment
                         </b>
-                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                        <a href="#increment"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>ngOnInit()</code>
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>increment()</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="13"
-                            class="link-to-prism">src/app/icons/components/icon-close/icon-close.component.ts:13</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="12"
+                            class="link-to-prism">src/app/core/services/version.service.ts:12</a></div>
                 </td>
             </tr>
 
@@ -229,7 +173,7 @@
         </tbody>
     </table>
 </section>
-    <section>
+            <section>
     
         <h3 id="inputs">
             Properties
@@ -238,23 +182,23 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="myIcon"></a>
+                        <a name="numVersion"></a>
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            myIcon</b>
-                            <a href="#myIcon"><span class="icon ion-ios-link"></span></a>
+                            numVersion</b>
+                            <a href="#numVersion"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>faTimes</code>
+                            <i>Default value : </i><code>new BehaviorSubject(1)</code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/icons/components/icon-close/icon-close.component.ts:10</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/core/services/version.service.ts:8</a></div>
                             </td>
                         </tr>
 
@@ -263,77 +207,29 @@
         </table>
 </section>
 
-</div>
+    </div>
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
-import { faTimes } from &#x27;@fortawesome/free-solid-svg-icons&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { BehaviorSubject } from &#x27;rxjs&#x27;;
 
-@Component({
-  selector: &#x27;app-icon-close&#x27;,
-  templateUrl: &#x27;./icon-close.component.html&#x27;,
-  styleUrls: [&#x27;./icon-close.component.scss&#x27;],
+@Injectable({
+  providedIn: &#x27;root&#x27;,
 })
-export class IconCloseComponent implements OnInit {
-  public myIcon &#x3D; faTimes;
+export class VersionService {
+  public numVersion &#x3D; new BehaviorSubject(1);
+
   constructor() {}
 
-  ngOnInit(): void {}
+  public increment(): void {
+    this.numVersion.next(this.numVersion.value + 1);
+  }
 }
 </code></pre>
     </div>
 
-    <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;fa-icon [icon]&#x3D;&quot;myIcon&quot;&gt;&lt;/fa-icon&gt;
-</code></pre>
-    </div>
-
-    <div class="tab-pane fade " id="c-styleData">
-                <p class="comment">
-                    <code>./icon-close.component.scss</code>
-                </p>
-                <pre class="line-numbers"><code class="language-scss">fa-icon {
-  cursor: pointer;
-  margin-right: 5px;
-}
-</code></pre>
-    </div>
-
-    <div class="tab-pane fade " id="c-tree">
-        <div id="tree-container"></div>
-        <div class="tree-legend">
-            <div class="title">
-                <b>Legend</b>
-            </div>
-            <div>
-                <div class="color htmlelement"></div><span>Html element</span>
-            </div>
-            <div>
-                <div class="color component"></div><span>Component</span>
-            </div>
-            <div>
-                <div class="color directive"></div><span>Html element with directive</span>
-            </div>
-        </div>
-    </div>
-
-    
 </div>
-
-<script src="../js/libs/vis.min.js"></script>
-<script src="../js/libs/htmlparser.js"></script>
-<script src="../js/libs/deep-iterator.js"></script>
-<script>
-        var COMPONENT_TEMPLATE = '<div><fa-icon [icon]="myIcon"></fa-icon></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BtnComponent', 'selector': 'app-btn'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IconCloseComponent', 'selector': 'app-icon-close'},{'name': 'IconDeleteComponent', 'selector': 'app-icon-delete'},{'name': 'IconEditComponent', 'selector': 'app-icon-edit'},{'name': 'IconNavComponent', 'selector': 'app-icon-nav'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'PageAddClientsComponent', 'selector': 'app-page-add-clients'},{'name': 'PageAddOrdersComponent', 'selector': 'app-page-add-orders'},{'name': 'PageEditClientsComponent', 'selector': 'app-page-edit-clients'},{'name': 'PageEditOrdersComponent', 'selector': 'app-page-edit-orders'},{'name': 'PageForgotPasswordComponent', 'selector': 'app-page-forgot-password'},{'name': 'PageListClientsComponent', 'selector': 'app-page-list-clients'},{'name': 'PageListOrdersComponent', 'selector': 'app-page-list-orders'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PageResetPasswordComponent', 'selector': 'app-page-reset-password'},{'name': 'PageSignInComponent', 'selector': 'app-page-sign-in'},{'name': 'PageSignUpComponent', 'selector': 'app-page-sign-up'},{'name': 'TableLiteComponent', 'selector': 'app-table-lite'},{'name': 'TemplateContainerComponent', 'selector': 'app-template-container'},{'name': 'TemplateFullWidthComponent', 'selector': 'app-template-full-width'},{'name': 'Ui2Component', 'selector': 'app-ui2'},{'name': 'UiComponent', 'selector': 'app-ui'}];
-    var DIRECTIVES = [];
-    var ACTUAL_COMPONENT = {'name': 'IconCloseComponent'};
-</script>
-<script src="../js/tree.js"></script>
-
-
-
 
 
 
@@ -362,8 +258,8 @@ export class IconCloseComponent implements OnInit {
 
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
-            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
-            var COMPODOC_CURRENT_PAGE_URL = 'IconCloseComponent.html';
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'VersionService.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 

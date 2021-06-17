@@ -242,6 +242,25 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             </li>
                             <li class="link">
                                 <a href="modules/SharedModule.html" data-type="entity-link">SharedModule</a>
+                                    <li class="chapter inner">
+                                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
+                                            'data-target="#components-links-module-SharedModule-7709c74624e89396686de15a501e28fb"' : 'data-target="#xs-components-links-module-SharedModule-7709c74624e89396686de15a501e28fb"' }>
+                                            <span class="icon ion-md-cog"></span>
+                                            <span>Components</span>
+                                            <span class="icon ion-ios-arrow-down"></span>
+                                        </div>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-SharedModule-7709c74624e89396686de15a501e28fb"' :
+                                            'id="xs-components-links-module-SharedModule-7709c74624e89396686de15a501e28fb"' }>
+                                            <li class="link">
+                                                <a href="components/BtnComponent.html"
+                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">BtnComponent</a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="components/TableLiteComponent.html"
+                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">TableLiteComponent</a>
+                                            </li>
+                                        </ul>
+                                    </li>
                             </li>
                             <li class="link">
                                 <a href="modules/TemplatesModule.html" data-type="entity-link">TemplatesModule</a>
@@ -312,6 +331,9 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             <ul class="links collapse " ${ isNormalMode ? 'id="injectables-links"' : 'id="xs-injectables-links"' }>
                                 <li class="link">
                                     <a href="injectables/OrdersService.html" data-type="entity-link">OrdersService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="injectables/VersionService.html" data-type="entity-link">VersionService</a>
                                 </li>
                             </ul>
                         </li>

@@ -24,79 +24,79 @@
 <title>cluster_ClientsModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="8,-70 8,-195 874,-195 874,-70 8,-70"/>
 </g>
-<g id="clust2" class="cluster">
-<title>cluster_ClientsModule_declarations</title>
-<polygon fill="none" stroke="black" points="300,-78 300,-130 866,-130 866,-78 300,-78"/>
-</g>
 <g id="clust6" class="cluster">
 <title>cluster_ClientsModule_imports</title>
-<polygon fill="none" stroke="black" points="16,-78 16,-130 292,-130 292,-78 16,-78"/>
+<polygon fill="none" stroke="black" points="590,-78 590,-130 866,-130 866,-78 590,-78"/>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_ClientsModule_declarations</title>
+<polygon fill="none" stroke="black" points="16,-78 16,-130 582,-130 582,-78 16,-78"/>
 </g>
 <!-- PageAddClientsComponent -->
 <g id="node1" class="node">
 <title>PageAddClientsComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="858.32,-122 685.68,-122 685.68,-86 858.32,-86 858.32,-122"/>
-<text text-anchor="middle" x="772" y="-99.8" font-family="Times,serif" font-size="14.00">PageAddClientsComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="574.32,-122 401.68,-122 401.68,-86 574.32,-86 574.32,-122"/>
+<text text-anchor="middle" x="488" y="-99.8" font-family="Times,serif" font-size="14.00">PageAddClientsComponent</text>
 </g>
 <!-- ClientsModule -->
 <g id="node4" class="node">
 <title>ClientsModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="442.72,-187 439.72,-191 418.72,-191 415.72,-187 343.28,-187 343.28,-151 442.72,-151 442.72,-187"/>
-<text text-anchor="middle" x="393" y="-164.8" font-family="Times,serif" font-size="14.00">ClientsModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="537.72,-187 534.72,-191 513.72,-191 510.72,-187 438.28,-187 438.28,-151 537.72,-151 537.72,-187"/>
+<text text-anchor="middle" x="488" y="-164.8" font-family="Times,serif" font-size="14.00">ClientsModule</text>
 </g>
 <!-- PageAddClientsComponent&#45;&gt;ClientsModule -->
 <g id="edge1" class="edge">
 <title>PageAddClientsComponent&#45;&gt;ClientsModule</title>
-<path fill="none" stroke="black" d="M772,-122.28C772,-143.32 772,-175 772,-175 772,-175 452.94,-175 452.94,-175"/>
-<polygon fill="black" stroke="black" points="452.94,-171.5 442.94,-175 452.94,-178.5 452.94,-171.5"/>
+<path fill="none" stroke="black" d="M488,-122.11C488,-122.11 488,-140.99 488,-140.99"/>
+<polygon fill="black" stroke="black" points="484.5,-140.99 488,-150.99 491.5,-140.99 484.5,-140.99"/>
 </g>
 <!-- PageEditClientsComponent -->
 <g id="node2" class="node">
 <title>PageEditClientsComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="667.55,-122 496.45,-122 496.45,-86 667.55,-86 667.55,-122"/>
-<text text-anchor="middle" x="582" y="-99.8" font-family="Times,serif" font-size="14.00">PageEditClientsComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="383.55,-122 212.45,-122 212.45,-86 383.55,-86 383.55,-122"/>
+<text text-anchor="middle" x="298" y="-99.8" font-family="Times,serif" font-size="14.00">PageEditClientsComponent</text>
 </g>
 <!-- PageEditClientsComponent&#45;&gt;ClientsModule -->
 <g id="edge2" class="edge">
 <title>PageEditClientsComponent&#45;&gt;ClientsModule</title>
-<path fill="none" stroke="black" d="M582,-122.02C582,-139.37 582,-163 582,-163 582,-163 452.66,-163 452.66,-163"/>
-<polygon fill="black" stroke="black" points="452.66,-159.5 442.66,-163 452.66,-166.5 452.66,-159.5"/>
+<path fill="none" stroke="black" d="M298,-122.02C298,-139.37 298,-163 298,-163 298,-163 428.08,-163 428.08,-163"/>
+<polygon fill="black" stroke="black" points="428.08,-166.5 438.08,-163 428.08,-159.5 428.08,-166.5"/>
 </g>
 <!-- PageListClientsComponent -->
 <g id="node3" class="node">
 <title>PageListClientsComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="477.99,-122 308.01,-122 308.01,-86 477.99,-86 477.99,-122"/>
-<text text-anchor="middle" x="393" y="-99.8" font-family="Times,serif" font-size="14.00">PageListClientsComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="193.99,-122 24.01,-122 24.01,-86 193.99,-86 193.99,-122"/>
+<text text-anchor="middle" x="109" y="-99.8" font-family="Times,serif" font-size="14.00">PageListClientsComponent</text>
 </g>
 <!-- PageListClientsComponent&#45;&gt;ClientsModule -->
 <g id="edge3" class="edge">
 <title>PageListClientsComponent&#45;&gt;ClientsModule</title>
-<path fill="none" stroke="black" d="M393,-122.11C393,-122.11 393,-140.99 393,-140.99"/>
-<polygon fill="black" stroke="black" points="389.5,-140.99 393,-150.99 396.5,-140.99 389.5,-140.99"/>
+<path fill="none" stroke="black" d="M109,-122.28C109,-143.32 109,-175 109,-175 109,-175 428.06,-175 428.06,-175"/>
+<polygon fill="black" stroke="black" points="428.06,-178.5 438.06,-175 428.06,-171.5 428.06,-178.5"/>
 </g>
 <!-- ClientsRoutingModule -->
 <g id="node5" class="node">
 <title>ClientsRoutingModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="284.34,-122 281.34,-126 260.34,-126 257.34,-122 139.66,-122 139.66,-86 284.34,-86 284.34,-122"/>
-<text text-anchor="middle" x="212" y="-99.8" font-family="Times,serif" font-size="14.00">ClientsRoutingModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="858.34,-122 855.34,-126 834.34,-126 831.34,-122 713.66,-122 713.66,-86 858.34,-86 858.34,-122"/>
+<text text-anchor="middle" x="786" y="-99.8" font-family="Times,serif" font-size="14.00">ClientsRoutingModule</text>
 </g>
 <!-- ClientsRoutingModule&#45;&gt;ClientsModule -->
 <g id="edge4" class="edge">
 <title>ClientsRoutingModule&#45;&gt;ClientsModule</title>
-<path fill="none" stroke="black" d="M212,-122.02C212,-139.37 212,-163 212,-163 212,-163 333.06,-163 333.06,-163"/>
-<polygon fill="black" stroke="black" points="333.06,-166.5 343.06,-163 333.06,-159.5 333.06,-166.5"/>
+<path fill="none" stroke="black" d="M786,-122.28C786,-143.32 786,-175 786,-175 786,-175 547.88,-175 547.88,-175"/>
+<polygon fill="black" stroke="black" points="547.88,-171.5 537.88,-175 547.88,-178.5 547.88,-171.5"/>
 </g>
 <!-- SharedModule -->
 <g id="node6" class="node">
 <title>SharedModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="122.42,-122 119.42,-126 98.42,-126 95.42,-122 23.58,-122 23.58,-86 122.42,-86 122.42,-122"/>
-<text text-anchor="middle" x="73" y="-99.8" font-family="Times,serif" font-size="14.00">SharedModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="696.42,-122 693.42,-126 672.42,-126 669.42,-122 597.58,-122 597.58,-86 696.42,-86 696.42,-122"/>
+<text text-anchor="middle" x="647" y="-99.8" font-family="Times,serif" font-size="14.00">SharedModule</text>
 </g>
 <!-- SharedModule&#45;&gt;ClientsModule -->
 <g id="edge5" class="edge">
 <title>SharedModule&#45;&gt;ClientsModule</title>
-<path fill="none" stroke="black" d="M73,-122.28C73,-143.32 73,-175 73,-175 73,-175 333.35,-175 333.35,-175"/>
-<polygon fill="black" stroke="black" points="333.35,-178.5 343.35,-175 333.35,-171.5 333.35,-178.5"/>
+<path fill="none" stroke="black" d="M647,-122.02C647,-139.37 647,-163 647,-163 647,-163 547.87,-163 547.87,-163"/>
+<polygon fill="black" stroke="black" points="547.87,-159.5 537.87,-163 547.87,-166.5 547.87,-159.5"/>
 </g>
 </g>
 </svg>
