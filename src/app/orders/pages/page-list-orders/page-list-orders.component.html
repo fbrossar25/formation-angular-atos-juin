@@ -4,12 +4,11 @@
   <app-table-lite [headers]="headers">
     <tr *ngFor="let item of orders">
       <td>{{ item.typePresta }}</td>
-      <td>{{ item.client }}</td>
+      <td>{{ item.client | uppercase }}</td>
       <td>{{ item.nbJours }}</td>
-      <td>{{ item.tjmHt }} €</td>
-      <td>{{ item | total }} €</td>
-      <td>{{ item | total: true }} €</td>
-      <td>{{ item.state }}</td>
+      <td>{{ item.tjmHt | currency }}</td>
+      <td>{{ item | total | currency }}</td>
+      <td>{{ item | total: true | currency }}</td>
         <select (change)="changeState(item, $event)">
           <option *ngFor="let state of states" [value]="state" [selected]="state === item.state">
             {{ state }}
