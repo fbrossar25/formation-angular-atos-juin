@@ -66,6 +66,12 @@
         </p>
 
 
+            <p class="comment">
+                <h3>Extends</h3>
+            </p>
+            <p class="comment">
+                        <code><a href="../interfaces/HasTotalI.html" target="_self" >HasTotalI</a></code>
+            </p>
 
         <section>
             <h3 id="index">Index</h3>
@@ -352,8 +358,9 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { StateOrder } from &#x27;../enums/state-order&#x27;;
+import { HasTotalI } from &#x27;./has-total-i&#x27;;
 
-export interface OrderI {
+export interface OrderI extends HasTotalI {
   tjmHt: number;
   nbJours: number;
   tva: number;
