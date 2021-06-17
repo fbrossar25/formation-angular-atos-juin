@@ -261,6 +261,21 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                             </li>
                                         </ul>
                                     </li>
+                                <li class="chapter inner">
+                                    <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
+                                        'data-target="#directives-links-module-SharedModule-c3e052a799e92447f545b380cfd64515"' : 'data-target="#xs-directives-links-module-SharedModule-c3e052a799e92447f545b380cfd64515"' }>
+                                        <span class="icon ion-md-code-working"></span>
+                                        <span>Directives</span>
+                                        <span class="icon ion-ios-arrow-down"></span>
+                                    </div>
+                                    <ul class="links collapse" ${ isNormalMode ? 'id="directives-links-module-SharedModule-c3e052a799e92447f545b380cfd64515"' :
+                                        'id="xs-directives-links-module-SharedModule-c3e052a799e92447f545b380cfd64515"' }>
+                                        <li class="link">
+                                            <a href="directives/StateDirective.html"
+                                                data-type="entity-link" data-context="sub-entity" data-context-id="modules">StateDirective</a>
+                                        </li>
+                                    </ul>
+                                </li>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
                                             'data-target="#pipes-links-module-SharedModule-c3e052a799e92447f545b380cfd64515"' : 'data-target="#xs-pipes-links-module-SharedModule-c3e052a799e92447f545b380cfd64515"' }>
