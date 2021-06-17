@@ -55,6 +55,8 @@
 - Une interpolation dans un template HTML est exécuté de nombreuse fois, il ne faut donc JAMAIS appeler de fonction dans une interpolatin
   - par exemple dans `page-list-orders`, pour chaque ligne, la fonction `total` est appelée 8 fois, si la fonction est directement appelé dans le template HTML : c'est à cause du ChangeDetection d'angular
   - Dans cette exemple, utiliser un pipe résoud ce problème (pipe `total`)
+- Il faut penser à désouscrire aux observables (`unsubscribe`) pour éviter les fuites mémoires et comportements innatendus
+  - A faire dans le lifecycle onDestroy, méthode `ngOnDestroy`
 
 ## Fichiers d'angular
 

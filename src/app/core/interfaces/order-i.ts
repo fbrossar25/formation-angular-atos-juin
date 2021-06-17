@@ -1,6 +1,7 @@
 import { StateOrder } from '../enums/state-order';
+import { HasTotalI } from './has-total-i';
 
-export interface OrderI {
+export interface OrderI extends HasTotalI {
   tjmHt: number;
   nbJours: number;
   tva: number;

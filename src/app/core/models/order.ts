@@ -16,4 +16,10 @@ export class Order implements OrderI {
       Object.assign(this, props);
     }
   }
+  public totalHT(): number {
+    return this.tjmHt * this.nbJours;
+  }
+  public totalTTC(): number {
+    return (this.tjmHt * this.nbJours * (100 + this.tva)) / 100;
+  }
 }

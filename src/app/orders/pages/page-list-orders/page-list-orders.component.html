@@ -1,4 +1,4 @@
-<app-template-full-width [title]="myTitle">
+<app-template-full-width [title]="myTitle" *ngIf="orders$ | async as orders">
   <!-- tout ici constitue le contenu de cette page et est projetté -->
   <!-- à la place de ng-content dans template-full-width.component.html -->
   <app-table-lite [headers]="headers">
@@ -7,8 +7,8 @@
       <td>{{ item.client }}</td>
       <td>{{ item.nbJours }}</td>
       <td>{{ item.tjmHt }} €</td>
-      <td>{{ item.tjmHt | total: item.nbJours }} €</td>
-      <td>{{ item.tjmHt | total: item.nbJours:item.tva }} €</td>
+      <td>{{ item | total }} €</td>
+      <td>{{ item | total: true }} €</td>
       <td>{{ item.state }}</td>
     </tr>
   </app-table-lite>

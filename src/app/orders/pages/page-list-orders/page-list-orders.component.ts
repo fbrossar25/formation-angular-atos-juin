@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Observable, Subscription } from 'rxjs';
 import { Order } from 'src/app/core/models/order';
 import { OrdersService } from '../../services/orders.service';
 
@@ -7,9 +8,10 @@ import { OrdersService } from '../../services/orders.service';
   templateUrl: './page-list-orders.component.html',
   styleUrls: ['./page-list-orders.component.scss'],
 })
-export class PageListOrdersComponent implements OnInit {
+export class PageListOrdersComponent implements OnInit, OnDestroy {
   public myTitle = 'List Orders';
-  public orders!: Order[];
+  private sub!: Subscription;
+  public orders$!: Observable<Order[]>;
   public headers = [
     'Type',
     'Client',
@@ -20,10 +22,15 @@ export class PageListOrdersComponent implements OnInit {
     'State',
   ];
   constructor(private ordersService: OrdersService) {
-    this.ordersService.collection.subscribe((data) => {
-      this.orders = data;
-    });
+    // copie par référence de l'observable
+    // permet d'utiliser le pipe async dans le template HTML
+    // qui gère lui-même les subscribe/unsubscribe automatiquement
+    this.orders$ = this.ordersService.collection;
   }
 
   ngOnInit(): void {}
+
+  ngOnDestroy(): void {
+    this.sub.unsubscribe();
+  }
 }
