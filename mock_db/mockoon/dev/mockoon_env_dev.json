@@ -58,6 +58,70 @@
                         "enabled": true,
                         "randomResponse": false,
                         "sequentialResponse": false
+                    },
+                    {
+                        "uuid": "",
+                        "documentation": "",
+                        "method": "put",
+                        "endpoint": "orders/:id",
+                        "responses": [
+                            {
+                                "uuid": "",
+                                "body": "{\n  \"status\": 400,\n  \"message\": \"Bad Request\",\n  \"cause\": \"id must be an integer greater or equal to 0\"\n}",
+                                "latency": 0,
+                                "statusCode": 400,
+                                "label": "Bad id",
+                                "headers": [],
+                                "filePath": "",
+                                "sendFileAsBody": false,
+                                "rules": [
+                                    {
+                                        "target": "params",
+                                        "modifier": "id",
+                                        "value": "[^\\d]+",
+                                        "isRegex": true
+                                    }
+                                ],
+                                "rulesOperator": "AND",
+                                "disableTemplating": false
+                            },
+                            {
+                                "uuid": "",
+                                "body": "{\r\n  \"id\": {{body 'id'}},\r\n  \"tjmHt\": {{body 'tjmHt'}},\r\n  \"nbJours\": {{body 'nbJours'}},\r\n  \"tva\": {{body 'tva'}},\r\n  \"state\": {{body 'state'}},\r\n  \"typePresta\": {{body 'typePresta'}},\r\n  \"client\": {{body 'client'}},\r\n  \"comment\": {{body 'comment'}},\r\n}",
+                                "latency": 0,
+                                "statusCode": 200,
+                                "label": "OK",
+                                "headers": [],
+                                "filePath": "",
+                                "sendFileAsBody": false,
+                                "rules": [
+                                    {
+                                        "target": "params",
+                                        "modifier": "id",
+                                        "value": "[12345]",
+                                        "isRegex": true
+                                    }
+                                ],
+                                "rulesOperator": "OR",
+                                "disableTemplating": false
+                            },
+                            {
+                                "uuid": "",
+                                "body": "{\n  \"status\": 404,\n  \"message\": \"Not Found\",\n  \"cause\": \"Order {{ urlParam 'id' }} not found\"\n}",
+                                "latency": 0,
+                                "statusCode": 404,
+                                "label": "Not found",
+                                "headers": [],
+                                "filePath": "",
+                                "sendFileAsBody": false,
+                                "rules": [],
+                                "rulesOperator": "OR",
+                                "disableTemplating": false
+                            }
+                        ],
+                        "enabled": true,
+                        "randomResponse": false,
+                        "sequentialResponse": false
                     }
                 ],
                 "proxyMode": false,
