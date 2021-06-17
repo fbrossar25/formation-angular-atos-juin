@@ -7,8 +7,8 @@
       <td>{{ item.client }}</td>
       <td>{{ item.nbJours }}</td>
       <td>{{ item.tjmHt }} €</td>
-      <td>{{ total(item.tjmHt, item.nbJours) }} €</td>
-      <td>{{ total(item.tjmHt, item.nbJours, item.tva) }} €</td>
+      <td>{{ item.tjmHt | total: item.nbJours }} €</td>
+      <td>{{ item.tjmHt | total: item.nbJours:item.tva }} €</td>
       <td>{{ item.state }}</td>
     </tr>
   </app-table-lite>

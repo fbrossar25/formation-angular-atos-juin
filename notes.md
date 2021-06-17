@@ -52,6 +52,9 @@
 - Exporter `RouterModule` dans `AppRoutingModule` car il permet d'utiliser la directive `<router-outlet>` dans `app.component.html`
   - Fait partis des guidelines d'Angular
   - Le faire dans app-routing, c'est l'quivalent de l'ajouter dans les import de `app-module.ts` car ce dernier import `app-routing-module`
+- Une interpolation dans un template HTML est exécuté de nombreuse fois, il ne faut donc JAMAIS appeler de fonction dans une interpolatin
+  - par exemple dans `page-list-orders`, pour chaque ligne, la fonction `total` est appelée 8 fois, si la fonction est directement appelé dans le template HTML : c'est à cause du ChangeDetection d'angular
+  - Dans cette exemple, utiliser un pipe résoud ce problème (pipe `total`)
 
 ## Fichiers d'angular
 
