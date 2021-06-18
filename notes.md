@@ -58,6 +58,7 @@
 - Il faut penser à désouscrire aux observables (`unsubscribe`) pour éviter les fuites mémoires et comportements innatendus
   - A faire dans le lifecycle onDestroy, méthode `ngOnDestroy`, en sauvegardant l'objet `Subscription` retourné par un `subscribe`
   - Il est également possible (et même recommandé) de faire une copie par référence de l'observable cible et d'utiliser le pipe async dans le template HTML, qui gèreras automatiquement les `subscribe` et `unsubscribe`
+  - Seule les observable que l'on créé nous-même sont à désouscrire, il n'est pas nécessaire de désouscrire à un Observable retourné par l'API Angular ou Http par exemple.
 
 ## Fichiers d'angular
 

@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Observable, Subscription } from 'rxjs';
+import { BehaviorSubject, Subscription } from 'rxjs';
 import { StateOrder } from 'src/app/core/enums/state-order';
 import { Order } from 'src/app/core/models/order';
 import { OrdersService } from '../../services/orders.service';
@@ -13,7 +13,7 @@ import { OrdersService } from '../../services/orders.service';
 export class PageListOrdersComponent implements OnInit, OnDestroy {
   public states = Object.values(StateOrder);
   public myTitle = 'List Orders';
-  public orders$!: Observable<Order[]>;
+  public orders$!: BehaviorSubject<Order[]>;
   public changeStateSub!: Subscription;
   public headers = [
     'Action',
@@ -30,6 +30,7 @@ export class PageListOrdersComponent implements OnInit, OnDestroy {
     // permet d'utiliser le pipe async dans le template HTML
     // qui gère lui-même les subscribe/unsubscribe automatiquement
     this.orders$ = this.ordersService.collection;
+    this.ordersService.refreshCollection();
   }
 
   ngOnInit(): void {}
@@ -53,5 +54,9 @@ export class PageListOrdersComponent implements OnInit, OnDestroy {
 
   public goToEdit(item: Order): void {
     this.router.navigate(['orders', 'edit', item.id]);
+  }
+
+  public deleteItem(item: Order): void {
+    this.ordersService.delete(item).subscribe();
   }
 }
