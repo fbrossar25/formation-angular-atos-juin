@@ -66,6 +66,10 @@
 <title>cluster_SharedModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="8,-70 8,-268 651,-268 651,-70 8,-70"/>
 </g>
+<g id="clust8" class="cluster">
+<title>cluster_SharedModule_exports</title>
+<polygon fill="none" stroke="black" points="16,-208 16,-260 643,-260 643,-208 16,-208"/>
+</g>
 <g id="clust2" class="cluster">
 <title>cluster_SharedModule_declarations</title>
 <polygon fill="none" stroke="black" points="161,-78 161,-130 635,-130 635,-78 161,-78"/>
@@ -73,10 +77,6 @@
 <g id="clust7" class="cluster">
 <title>cluster_SharedModule_imports</title>
 <polygon fill="none" stroke="black" points="19,-78 19,-130 153,-130 153,-78 19,-78"/>
-</g>
-<g id="clust8" class="cluster">
-<title>cluster_SharedModule_exports</title>
-<polygon fill="none" stroke="black" points="16,-208 16,-260 643,-260 643,-208 16,-208"/>
 </g>
 <!-- BtnComponent -->
 <g id="node1" class="node">
@@ -300,21 +300,23 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { CommonModule } from &#x27;@angular/common&#x27;;
 import { NgModule } from &#x27;@angular/core&#x27;;
+import { RouterModule } from &#x27;@angular/router&#x27;;
 import { TemplatesModule } from &#x27;../templates/templates.module&#x27;;
-import { TableLiteComponent } from &#x27;./components/table-lite/table-lite.component&#x27;;
 import { BtnComponent } from &#x27;./components/btn/btn.component&#x27;;
-import { TotalPipe } from &#x27;./pipes/total.pipe&#x27;;
+import { TableLiteComponent } from &#x27;./components/table-lite/table-lite.component&#x27;;
 import { StateDirective } from &#x27;./directives/state.directive&#x27;;
+import { TotalPipe } from &#x27;./pipes/total.pipe&#x27;;
 
 @NgModule({
-  declarations: [
+  declarations: [TableLiteComponent, BtnComponent, TotalPipe, StateDirective],
+  imports: [CommonModule, TemplatesModule, RouterModule],
+  exports: [
+    TemplatesModule,
     TableLiteComponent,
     BtnComponent,
     TotalPipe,
-    StateDirective
+    StateDirective,
   ],
-  imports: [CommonModule, TemplatesModule],
-  exports: [TemplatesModule, TableLiteComponent, BtnComponent, TotalPipe, StateDirective],
 })
 export class SharedModule {}
 </code></pre>

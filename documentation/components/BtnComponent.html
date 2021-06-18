@@ -138,6 +138,23 @@
                     </td>
                 </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#label">label</a>
+                            </li>
+                            <li>
+                                <a href="#route">route</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
 
 
 
@@ -157,7 +174,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/shared/components/btn/btn.component.ts:8</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/shared/components/btn/btn.component.ts:10</a></div>
                             </td>
                         </tr>
 
@@ -165,7 +182,51 @@
         </table>
 </section>
 
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="label"></a>
+                        <b>label</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
 
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/shared/components/btn/btn.component.ts:9</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="route"></a>
+                        <b>route</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/shared/components/btn/btn.component.ts:10</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
 
 
 
@@ -196,8 +257,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="12"
-                            class="link-to-prism">src/app/shared/components/btn/btn.component.ts:12</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="13"
+                            class="link-to-prism">src/app/shared/components/btn/btn.component.ts:13</a></div>
                 </td>
             </tr>
 
@@ -219,26 +280,25 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Input, OnInit } from &#x27;@angular/core&#x27;;
 
 @Component({
   selector: &#x27;app-btn&#x27;,
   templateUrl: &#x27;./btn.component.html&#x27;,
-  styleUrls: [&#x27;./btn.component.scss&#x27;]
+  styleUrls: [&#x27;./btn.component.scss&#x27;],
 })
 export class BtnComponent implements OnInit {
+  @Input() public label!: string;
+  @Input() public route!: string;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;p&gt;btn works!&lt;/p&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;a [routerLink]&#x3D;&quot;route&quot; routerLinkActive&#x3D;&quot;router-link-active&quot; class&#x3D;&quot;btn&quot;&gt;{{ label }}&lt;/a&gt;
 </code></pre>
     </div>
 
@@ -246,7 +306,19 @@ export class BtnComponent implements OnInit {
                 <p class="comment">
                     <code>./btn.component.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss"></code></pre>
+                <pre class="line-numbers"><code class="language-scss">.btn {
+  display: block;
+  width: 115px;
+  height: 40px;
+  background: #4e9caf;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  line-height: 25px;
+}
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -274,8 +346,8 @@ export class BtnComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><p>btn works!</p></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BtnComponent', 'selector': 'app-btn'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IconCloseComponent', 'selector': 'app-icon-close'},{'name': 'IconDeleteComponent', 'selector': 'app-icon-delete'},{'name': 'IconEditComponent', 'selector': 'app-icon-edit'},{'name': 'IconNavComponent', 'selector': 'app-icon-nav'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'PageAddClientsComponent', 'selector': 'app-page-add-clients'},{'name': 'PageAddOrdersComponent', 'selector': 'app-page-add-orders'},{'name': 'PageEditClientsComponent', 'selector': 'app-page-edit-clients'},{'name': 'PageEditOrdersComponent', 'selector': 'app-page-edit-orders'},{'name': 'PageForgotPasswordComponent', 'selector': 'app-page-forgot-password'},{'name': 'PageListClientsComponent', 'selector': 'app-page-list-clients'},{'name': 'PageListOrdersComponent', 'selector': 'app-page-list-orders'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PageResetPasswordComponent', 'selector': 'app-page-reset-password'},{'name': 'PageSignInComponent', 'selector': 'app-page-sign-in'},{'name': 'PageSignUpComponent', 'selector': 'app-page-sign-up'},{'name': 'TableLiteComponent', 'selector': 'app-table-lite'},{'name': 'TemplateContainerComponent', 'selector': 'app-template-container'},{'name': 'TemplateFullWidthComponent', 'selector': 'app-template-full-width'},{'name': 'Ui2Component', 'selector': 'app-ui2'},{'name': 'UiComponent', 'selector': 'app-ui'}];
+        var COMPONENT_TEMPLATE = '<div><a [routerLink]="route" routerLinkActive="router-link-active" class="btn">{{ label }}</a></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BtnComponent', 'selector': 'app-btn'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FormOrderComponent', 'selector': 'app-form-order'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IconCloseComponent', 'selector': 'app-icon-close'},{'name': 'IconDeleteComponent', 'selector': 'app-icon-delete'},{'name': 'IconEditComponent', 'selector': 'app-icon-edit'},{'name': 'IconNavComponent', 'selector': 'app-icon-nav'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'PageAddClientsComponent', 'selector': 'app-page-add-clients'},{'name': 'PageAddOrdersComponent', 'selector': 'app-page-add-orders'},{'name': 'PageEditClientsComponent', 'selector': 'app-page-edit-clients'},{'name': 'PageEditOrdersComponent', 'selector': 'app-page-edit-orders'},{'name': 'PageForgotPasswordComponent', 'selector': 'app-page-forgot-password'},{'name': 'PageListClientsComponent', 'selector': 'app-page-list-clients'},{'name': 'PageListOrdersComponent', 'selector': 'app-page-list-orders'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PageResetPasswordComponent', 'selector': 'app-page-reset-password'},{'name': 'PageSignInComponent', 'selector': 'app-page-sign-in'},{'name': 'PageSignUpComponent', 'selector': 'app-page-sign-up'},{'name': 'TableLiteComponent', 'selector': 'app-table-lite'},{'name': 'TemplateContainerComponent', 'selector': 'app-template-container'},{'name': 'TemplateFullWidthComponent', 'selector': 'app-template-full-width'},{'name': 'Ui2Component', 'selector': 'app-ui2'},{'name': 'UiComponent', 'selector': 'app-ui'}];
     var DIRECTIVES = [{'name': 'StateDirective', 'selector': '[appState]'}];
     var ACTUAL_COMPONENT = {'name': 'BtnComponent'};
 </script>
