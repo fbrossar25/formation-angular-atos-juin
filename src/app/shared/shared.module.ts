@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { TemplatesModule } from '../templates/templates.module';
 import { BtnComponent } from './components/btn/btn.component';
@@ -16,6 +17,7 @@ import { TotalPipe } from './pipes/total.pipe';
     BtnComponent,
     TotalPipe,
     StateDirective,
+    ReactiveFormsModule,
   ],
 })
 export class SharedModule {}
