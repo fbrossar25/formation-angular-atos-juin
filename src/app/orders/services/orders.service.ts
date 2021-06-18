@@ -31,15 +31,23 @@ export class OrdersService {
     this.collection$ = col;
   }
   // change  state item
-  public changeState(item: Order, state: StateOrder): Observable<any> {
+  public changeState(item: Order, state: StateOrder): Observable<Order> {
     const obj = new Order({ ...item });
     obj.state = state;
     return this.update(obj);
   }
 
   // update item in collection
-  public update(item: Order): Observable<any> {
-    return this.http.put<any>(`${this.urlApi}/orders/${item.id}`, item);
+  public update(item: Order): Observable<Order> {
+    return this.http.put<Order>(`${this.urlApi}/orders/${item.id}`, item);
+  }
+
+  public add(item: Order): Observable<Order> {
+    return this.http.post<Order>(`${this.urlApi}/orders`, item);
+  }
+
+  public getItemById(id: number): Observable<Order> {
+    return this.http.get<Order>(`${this.urlApi}/orders/${id}`);
   }
   //set collection
 

@@ -3,6 +3,7 @@
   <!-- à la place de ng-content dans template-full-width.component.html -->
   <app-table-lite [headers]="headers">
     <tr *ngFor="let item of orders">
+      <td><app-icon-edit (click)="goToEdit(item)"></app-icon-edit></td>
       <td>{{ item.typePresta }}</td>
       <td>{{ item.client | uppercase }}</td>
       <td>{{ item.nbJours }}</td>
